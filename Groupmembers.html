@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Members</title>
+    <style>
+        /* Reset Styles */
+        body, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fce4ec; /* Light pink background */
+            color: #333;
+        }
+
+        header {
+            background-color: #ec407a; /* Pink background for header */
+            padding: 15px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            text-transform: uppercase;
+        }
+
+        .navbar li {
+            display: inline;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            padding: 10px 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #f06292; /* Lighter pink for hover */
+            border-radius: 5px;
+            transform: scale(1.05);
+        }
+
+        main {
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #d81b60; /* Darker pink color for heading */
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 40px;
+            color: #8e24aa; /* Purple-pink text */
+        }
+
+        .member-list {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .member-item {
+            text-align: center;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 200px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .member-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .member-item img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid #f06292; /* Lighter pink border */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .member-item p {
+            font-size: 18px;
+            font-weight: bold;
+            color: #d81b60; /* Darker pink for member names */
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .navbar {
+                justify-content: space-around;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .member-list {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Groupmembers.html">Group Members</a></li>
+                <li><a href="ourproject.html">Project</a></li>
+                <li><a href="school.html">Our School</a></li>
+                <li><a href="artikel.html">Artikel</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Group Members</h1>
+        <p>Here are the members of our group:</p>
+        <div class="member-list">
+            <div class="member-item">
+                <img src="ivana.jpg" alt="Ivana Ing Charisda">
+                <p>Ivana Ing Charisda</p>
+            </div>
+            <div class="member-item">
+                <img src="s.jpg" alt="Jovita Christy">
+                <p>Jovita Christy</p>
+            </div>
+            <div class="member-item">
+                <img src="gwen.jpg" alt="Gwen Aretha Hillary Damanik">
+                <p>Gwen Aretha Hillary Damanik</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

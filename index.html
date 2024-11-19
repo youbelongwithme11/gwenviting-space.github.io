@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+    <style>
+        /* Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fce4ec; /* Light pink background */
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Welcome Section with Navigation */
+        .welcome-section {
+            text-align: center;
+            padding: 40px 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(210, 5, 94, 0.05);
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+
+        /* Navigation Bar Styles */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin: 0 auto 30px;
+            padding: 15px;
+            list-style: none;
+            background: linear-gradient(135deg, #f06292, #e91e63); /* Pink gradient */
+            border-radius: 10px;
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 8px 15px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            display: block;
+            white-space: nowrap;
+        }
+
+        .navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .welcome-section h1 {
+            color: #d81b60; /* Pink color for the title */
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .welcome-section p {
+            color: #8e24aa; /* Purple-pink text */
+            font-size: 1.1em;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            line-height: 1.8;
+        }
+
+        .welcome-section img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(247, 5, 171, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .welcome-section img:hover {
+            transform: scale(1.02);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 10px;
+                gap: 8px;
+            }
+
+            .navbar a {
+                font-size: 14px;
+                padding: 6px 12px;
+            }
+
+            .welcome-section {
+                padding: 20px 15px;
+            }
+
+            .welcome-section h1 {
+                font-size: 2em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .navbar {
+                padding: 8px;
+                gap: 5px;
+            }
+
+            .navbar a {
+                font-size: 12px;
+                padding: 5px 10px;
+            }
+
+            .welcome-section h1 {
+                font-size: 1.8em;
+            }
+
+            .welcome-section p {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-section">
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="Groupmembers.html">Group Members</a></li>
+                <li><a href="ourproject.html">Project</a></li>
+                <li><a href="school.html">Our School</a></li>
+                <li><a href="artikel.html">Artikel</a></li>
+            </ul>
+        </nav>
+        <h1>Selamat Datang di Website Kami!</h1>
+        <p>Terima kasih telah mengunjungi situs kami. Di sini, Anda akan menemukan informasi tentang proyek kami, anggota tim, serta berbagai artikel menarik. Kami berharap Anda menikmati pengalaman menjelajahi situs ini.</p>
+        <img src="selamat.png" alt="Welcome Image">
+    </div>
+</body>
+</html>

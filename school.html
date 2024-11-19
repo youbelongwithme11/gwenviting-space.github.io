@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our School</title>
+    <style>
+        /* Reset Styles */
+        body, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fce4ec; /* Light pink background */
+        }
+
+        header {
+            background-color: #ec407a; /* Pink header */
+            padding: 10px 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .navbar li {
+            display: inline;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #f06292; /* Lighter pink hover effect */
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #d81b60; /* Darker pink for the heading */
+        }
+
+        p {
+            font-size: 18px;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .navbar {
+                justify-content: space-around;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="Groupmembers.html">Group Members</a></li>
+                <li><a href="ourproject.html">Project</a></li>
+                <li><a href="school.html">Our School</a></li>
+                <li><a href="artikel.html">Artikel</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Our School</h1>
+        <p>Our school is a place of learning and creativity. Here, we foster growth and innovation.</p>
+        <img src="71.jpg" alt="SMA 71 Jakarta" style="width: 100%; max-width: 600px; height: auto;">
+    </main>
+</body>
+</html>
